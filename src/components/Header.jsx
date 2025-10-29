@@ -6,7 +6,15 @@ export default function Header() {
     <header>
       <img src={logo} alt="A canvas" />
       <h1>ReactArt</h1>
-      <p>A community of artists and art-lovers.</p>
+      {/* passing empty style object to demo inline styling */}
+      <p
+        style={{
+          color: "red",
+          textAlign: "left",
+        }}
+      >
+        A community of artists and art-lovers.
+      </p>
     </header>
   );
 }
