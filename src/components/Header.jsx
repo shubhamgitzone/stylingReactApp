@@ -1,5 +1,5 @@
 import logo from "../assets/logo.png";
-import "./Header.css";
+import classes from "./Header.module.css";
 
 export default function Header() {
   return (
@@ -8,6 +8,7 @@ export default function Header() {
       <h1>ReactArt</h1>
       {/* passing empty style object to demo inline styling */}
       <p
+        className={classes.paragraphs}
         style={{
           color: "red",
           textAlign: "left",
